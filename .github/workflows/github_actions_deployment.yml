@@ -46,7 +46,8 @@ jobs:
         run: npm run build --prod
       
       - name: Lint
-        run: npm run lint 
+        #run: npm run lint 
+        run: node --max_old_space_size=4096 node_modules/@angular/cli/bin/ng lint
         
       - name: Test
         run: npm run test --prod
