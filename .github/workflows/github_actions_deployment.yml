@@ -46,7 +46,7 @@ jobs:
         run: npm run build --prod
       
       - name: Lint
-        run: npm run lint -- --fix
+        run: npm run lint -- --fix 
         
       - name: Test
         run: npm run test --prod
